@@ -25,8 +25,9 @@ def opponent(update: Update, context: CallbackContext) -> None:
 
 def player(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('Введите номер строки')
-    a= update.message.text
+    x= update.message.text
     update.message.reply_text('Введите номер столбца')
+    y= update.message.text
     x -= 1
     y -= 1
     update.message.reply_text(f'Игрок ходит на {x}, {y}')
